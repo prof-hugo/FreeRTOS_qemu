@@ -303,7 +303,7 @@ BaseType_t xPortStartScheduler( void )
                     /* Check the CMSIS configuration that defines the number of
                      * priority bits matches the number of priority bits actually queried
                      * from the hardware. */
-                    //configASSERT( ( portMAX_PRIGROUP_BITS - ulMaxPRIGROUPValue ) == __NVIC_PRIO_BITS ); // !PRIGROUP is unimplemented in QEMU ARM 2.8.0-9.2
+                    configASSERT( ( portMAX_PRIGROUP_BITS - ulMaxPRIGROUPValue ) == __NVIC_PRIO_BITS );
                 }
             #endif
 
@@ -312,7 +312,7 @@ BaseType_t xPortStartScheduler( void )
                     /* Check the FreeRTOS configuration that defines the number of
                      * priority bits matches the number of priority bits actually queried
                      * from the hardware. */
-                    //configASSERT( ( portMAX_PRIGROUP_BITS - ulMaxPRIGROUPValue ) == configPRIO_BITS ); // !PRIGROUP is unimplemented in QEMU ARM 2.8.0-9.2
+                    configASSERT( ( portMAX_PRIGROUP_BITS - ulMaxPRIGROUPValue ) == configPRIO_BITS );
                 }
             #endif
 

@@ -4,21 +4,18 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../FreeRTOS/Source/event_groups.c \
 ../FreeRTOS/Source/list.c \
 ../FreeRTOS/Source/queue.c \
 ../FreeRTOS/Source/tasks.c \
 ../FreeRTOS/Source/timers.c 
 
 OBJS += \
-./FreeRTOS/Source/event_groups.o \
 ./FreeRTOS/Source/list.o \
 ./FreeRTOS/Source/queue.o \
 ./FreeRTOS/Source/tasks.o \
 ./FreeRTOS/Source/timers.o 
 
 C_DEPS += \
-./FreeRTOS/Source/event_groups.d \
 ./FreeRTOS/Source/list.d \
 ./FreeRTOS/Source/queue.d \
 ./FreeRTOS/Source/tasks.d \

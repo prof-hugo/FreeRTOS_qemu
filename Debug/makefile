@@ -8,7 +8,6 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include Libraries/STM32F4xx_HAL_Driver/Src/Legacy/subdir.mk
 -include Libraries/STM32F4xx_HAL_Driver/Src/subdir.mk
 -include FreeRTOS/Source/portable/GCC/MemMang/subdir.mk
 -include FreeRTOS/Source/portable/GCC/ARM_CM3/subdir.mk

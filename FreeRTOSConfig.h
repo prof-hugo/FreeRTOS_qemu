@@ -86,6 +86,8 @@
 #endif
 
 #include "system_stm32f4xx.h"
+// !PRIGROUP is unimplemented in QEMU ARM 2.8.0-9.2 -> __NVIC_PRIO_BITS must be set to 8
+#define __NVIC_PRIO_BITS						8
 
 #define configUSE_PREEMPTION                    1
 #define configUSE_PORT_OPTIMISED_TASK_SELECTION 0

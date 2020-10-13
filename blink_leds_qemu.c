@@ -21,9 +21,6 @@
 #include "stm32f4_discovery.h"
 #include "FreeRTOS.h"
 #include "task.h"
-#include <stdint.h>
-#include <stdlib.h>
-#include <string.h>
 
 /*=================================================================================================
   LOCAL DEFINITIONS
